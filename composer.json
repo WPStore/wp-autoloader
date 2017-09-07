@@ -1,6 +1,7 @@
 {
   "name": "wpstore/autoloader",
   "description": "description_text",
+  "version": "0.1.0",
   "minimum-stability": "stable",
   "license": "internal",
   "authors": [
