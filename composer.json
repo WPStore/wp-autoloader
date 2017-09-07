@@ -1,0 +1,15 @@
+{
+  "name": "wpstore/autoloader",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "internal",
+  "authors": [
+    {
+      "name": "Christian Foellmann",
+      "email": "foellmann@foe-services.de"
+    }
+  ],
+  "autoload": {
+    "files": ["autoloader.php"]
+  }
+}
