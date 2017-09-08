@@ -1,15 +1,33 @@
 {
-  "name": "wpstore/autoloader",
+  "name": "wpstore/wp-autoloader",
   "description": "description_text",
   "version": "0.1.0",
-  "license": "internal",
+  "type": "library",
+  "keyword": ["wordpress", "autoload", "autoloader"],
+  "license": "MIT",
   "authors": [
     {
+      "name": "WPStore.io",
+      "homepage": "https://develop.wpstore.io",
+      "role": "Developer"
+    },
+    {
       "name": "Christian Foellmann",
-      "email": "foellmann@foe-services.de"
+      "email": "foellmann@foe-services.de",
+      "homepage": "http://christian.foellmann.de",
+      "role": "Developer"
+    },
+    {
+      "name": "PHP Framework Interop Group",
+      "homepage": "https://github.com/php-fig/fig-standards",
+      "role": "Upstream"
     }
   ],
+  "support": {
+    "issues": "https://github.com/WPStore/wp-autoloader/issues",
+    "source": "https://github.com/WPStore/wp-autoloader"
+  },
   "autoload": {
-    "files": ["autoloader.php"]
+    "files": ["wp-autoloader.php"]
   }
 }
