@@ -3,8 +3,8 @@
  * @author    WPStore.io <code@wpstore.io>
  * @copyright Copyright (c) 2017, WPStore.io
  * @license   https://spdx.org/licenses/MIT.html MIT
- * @package   WPStore\WPStoreUtils\Autoloader
- * @version   0.1.0
+ * @package   WPStore\WPUtils\Autoloader
+ * @version   1.0.0
  */
 
 /**
@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-namespace WPStoreUtils;
+namespace WPUtils;
 
 /**
  * An WPUtilities of a general-purpose implementation that includes the optional
@@ -56,7 +56,7 @@ namespace WPStoreUtils;
  *
  *      <?php
  *      // instantiate the loader
- *      $loader = new \WPStoreUtils\Autoloader;
+ *      $loader = new \WPUtils\Autoloader;
  *
  *      // register the autoloader
  *      $loader->register();
@@ -191,9 +191,7 @@ class Autoloader {
 			// replace the namespace prefix with the base directory,
 			// replace namespace separators with directory separators
 			// in the relative class name, append with .php
-			$file = $base_dir
-			        . str_replace( '\\', '/', $relative_class )
-			        . '.php';
+			$file = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
 
 			// if the mapped file exists, require it
 			if ( $this->requireFile( $file ) ) {

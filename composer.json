@@ -1,7 +1,7 @@
 {
   "name": "wpstore/wp-autoloader",
   "description": "description_text",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "library",
   "keyword": ["wordpress", "autoload", "autoloader"],
   "license": "MIT",
