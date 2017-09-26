@@ -17,7 +17,7 @@ All contributions are welcome (Pull Requests, Report Bugs/Issues).
 `Please send us your fixes or improvements whenever possible!`
 
 ## Changelog
-* 1.0.0 (2017-mm-dd)
+* 1.0.0 (2017-09-12)
   * initial release
 
 ## License: _[MIT](https://spdx.org/licenses/MIT.html)_

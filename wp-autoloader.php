@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2017, WPStore.io
  * @license   https://spdx.org/licenses/MIT.html MIT
  * @package   WPStore\WPUtils\Autoloader
- * @version   1.0.0
+ * @version   1.1.0-dev
  */
 
 /**
