@@ -10,7 +10,7 @@
 /**
  * MIT License
  *
- * Copyright (c) 2017 WPStore.io
+ * Copyright (c) 2017 WPStore.io (http://www.wpstore.io)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -34,7 +34,7 @@
 namespace WPUtils;
 
 /**
- * An WPUtilities of a general-purpose implementation that includes the optional
+ * An example of a general-purpose implementation that includes the optional
  * functionality of allowing multiple base directories for a single namespace
  * prefix.
  *
