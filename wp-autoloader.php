@@ -84,6 +84,7 @@ namespace WPUtils;
  * @See https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md
  */
 class Autoloader {
+
 	/**
 	 * An associative array where the key is a namespace prefix and the value
 	 * is an array of base directories for classes in that namespace.
@@ -95,7 +96,7 @@ class Autoloader {
 	/**
 	 * Register loader with SPL autoloader stack.
 	 *
-	 * @return void
+	 * @throws \Exception
 	 */
 	public function register() {
 		spl_autoload_register( array( $this, 'loadClass' ) );
