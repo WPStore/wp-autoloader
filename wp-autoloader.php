@@ -1,7 +1,7 @@
 <?php
 /**
  * @author    WPStore.io <code@wpstore.io>
- * @copyright Copyright (c) 2017, WPStore.io
+ * @copyright Copyright (c) 2017-2018, WPStore.io
  * @license   https://spdx.org/licenses/MIT.html MIT
  * @package   WPStore\WPUtils\Autoloader
  * @version   1.1.0-dev
@@ -10,7 +10,7 @@
 /**
  * MIT License
  *
- * Copyright (c) 2017 WPStore.io (http://www.wpstore.io)
+ * Copyright (c) 2017-18 WPStore.io (http://www.wpstore.io)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -80,6 +80,7 @@ namespace WPUtils;
 
 /**
  * Class Autoloader
+ *
  * @package WPStoreUtils
  * @See https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md
  */
@@ -115,18 +116,18 @@ class Autoloader {
 	 * @return void
 	 */
 	public function addNamespace( $prefix, $base_dir, $prepend = false ) {
-		// normalize namespace prefix
+		/** normalize namespace prefix */
 		$prefix = trim( $prefix, '\\' ) . '\\';
 
-		// normalize the base directory with a trailing separator
+		/** normalize the base directory with a trailing separator */
 		$base_dir = rtrim( $base_dir, DIRECTORY_SEPARATOR ) . '/';
 
-		// initialize the namespace prefix array
+		/** initialize the namespace prefix array */
 		if ( isset( $this->prefixes[ $prefix ] ) === false ) {
 			$this->prefixes[ $prefix ] = array();
 		}
 
-		// retain the base directory for the namespace prefix
+		/** retain the base directory for the namespace prefix */
 		if ( $prepend ) {
 			array_unshift( $this->prefixes[ $prefix ], $base_dir );
 		} else {
@@ -189,9 +190,11 @@ class Autoloader {
 		// look through base directories for this namespace prefix
 		foreach ( $this->prefixes[ $prefix ] as $base_dir ) {
 
-			// replace the namespace prefix with the base directory,
-			// replace namespace separators with directory separators
-			// in the relative class name, append with .php
+			/**
+			 * replace the namespace prefix with the base directory,
+			 * replace namespace separators with directory separators
+			 * in the relative class name, append with .php
+			 */
 			$file = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
 
 			// if the mapped file exists, require it
@@ -221,4 +224,5 @@ class Autoloader {
 
 		return false;
 	}
-}
+
+} // END class
